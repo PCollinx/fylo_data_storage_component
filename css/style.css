@@ -1,0 +1,381 @@
+/*
+Breakpoints choices
+
+-phone
+-tab-portrait
+-tab-landscape
+*/
+html {
+  box-sizing: border-box;
+  background-color: hsl(229, 57%, 11%);
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 37.5em) {
+  html {
+    background-image: url(../img/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 87.5%;
+  background-image: url(../img/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 62vh;
+  height: 320px;
+}
+@media (max-width: 37.5em) {
+  body {
+    background-image: none;
+  }
+}
+
+.fylo {
+  padding: 3rem;
+  background-color: hsl(228, 56%, 26%);
+  height: 120px;
+  width: 250px;
+  border-radius: 15px 90px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 56.25em) {
+  .fylo {
+    width: 170px;
+    height: 100px;
+    gap: 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .fylo {
+    height: 110px;
+    width: 225px;
+    gap: 2rem;
+  }
+}
+.fylo__header-img {
+  height: 3rem;
+  width: 10rem;
+}
+@media (max-width: 56.25em) {
+  .fylo__header-img {
+    height: 2rem;
+    width: 6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .fylo__header-img {
+    height: 3rem;
+    width: 10rem;
+  }
+}
+.fylo__img {
+  display: flex;
+  gap: 0.8rem;
+}
+@media (max-width: 56.25em) {
+  .fylo__img {
+    gap: 0.6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .fylo__img {
+    gap: 0.8rem;
+  }
+}
+.fylo__img-svg {
+  height: 1.3rem;
+  width: 1.5rem;
+  padding: 0.8rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+@media (max-width: 56.25em) {
+  .fylo__img-svg {
+    height: 1rem;
+    width: 1.1rem;
+    padding: 0.6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .fylo__img-svg {
+    height: 1.3rem;
+    width: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+.storage {
+  background-color: hsl(228, 56%, 26%);
+  height: 80px;
+  width: 38vw;
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+  align-self: flex-end;
+}
+@media (max-width: 56.25em) {
+  .storage {
+    height: 50px;
+    width: 35vw;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage {
+    width: 255px;
+    height: 110px;
+    padding: 2rem;
+  }
+}
+.storage__bar {
+  height: 20px;
+  width: 37vw;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding-left: 0.1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 56.25em) {
+  .storage__bar {
+    height: 17px;
+    width: 34vw;
+    margin-top: 0.8rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__bar {
+    height: 20px;
+    width: 250px;
+    margin-top: 1rem;
+  }
+}
+.storage__bar-progress {
+  height: 17px;
+  width: 28vw;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 56.25em) {
+  .storage__bar-progress {
+    height: 14px;
+    width: 24vw;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__bar-progress {
+    height: 16px;
+    width: 170px;
+  }
+}
+.storage__bar-progress-dot {
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 96.5%;
+}
+@media (max-width: 75em) {
+  .storage__bar-progress-dot {
+    left: 95%;
+  }
+}
+@media (max-width: 56.25em) {
+  .storage__bar-progress-dot {
+    height: 11px;
+    width: 11px;
+    left: 92.5%;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__bar-progress-dot {
+    height: 12px;
+    width: 12px;
+  }
+}
+.storage__left {
+  position: absolute;
+  top: -37%;
+  left: 27vw;
+  height: 80px;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 75em) {
+  .storage__left {
+    width: 150px;
+  }
+}
+@media (max-width: 56.25em) {
+  .storage__left {
+    top: -33%;
+    left: 22vw;
+    height: 60px;
+    width: 130px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__left {
+    top: 78%;
+    left: 25%;
+    height: 70px;
+    width: 160px;
+    font-size: 15px;
+  }
+}
+.storage__left::after {
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  clip-path: polygon(100% 0, 0 35%, 100% 100%);
+}
+@media (max-width: 56.25em) {
+  .storage__left::after {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 2.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__left::after {
+    width: 0;
+    height: 0;
+  }
+}
+.storage__total {
+  color: #fff;
+  position: absolute;
+  right: 4rem;
+  top: 6rem;
+  font-weight: 700;
+}
+@media (max-width: 56.25em) {
+  .storage__total {
+    font-size: 84%;
+    top: 5.3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__total {
+    top: 5.2rem;
+    font-size: 87.5%;
+    right: 2.5rem;
+  }
+}
+.storage__start {
+  color: #fff;
+  position: absolute;
+  left: 3rem;
+  top: 6rem;
+  font-weight: 700;
+}
+@media (max-width: 56.25em) {
+  .storage__start {
+    font-size: 84%;
+    top: 5.3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .storage__start {
+    top: 5.2rem;
+    font-size: 87.5%;
+    left: 2rem;
+  }
+}
+
+.bold {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+  text-align: center;
+}
+@media (max-width: 56.25em) {
+  .bold {
+    font-size: 20px;
+  }
+}
+@media (max-width: 37.5em) {
+  .bold {
+    font-size: 35px;
+  }
+}
+
+li {
+  list-style: none;
+  color: hsl(229, 7%, 55%);
+}
+@media (max-width: 56.25em) {
+  li {
+    font-size: 84%;
+  }
+}
+@media (max-width: 37.5em) {
+  li {
+    font-size: 15px;
+  }
+}
+
+.item {
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.layout {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-60%, -60%);
+  display: flex;
+  gap: 3rem;
+}
+@media (max-width: 56.25em) {
+  .layout {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
